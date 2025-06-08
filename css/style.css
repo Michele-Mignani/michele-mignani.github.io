@@ -35,9 +35,11 @@ body {
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease;
+  color: var(--primary); }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: var(--primary-dark); }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -85,12 +87,12 @@ body:after {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #2E8B57;  /* Sea Green */
-    border-color: #2E8B57;
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
     color: #fff; }
     .btn.btn-primary:hover {
-      background: #1B4D3E;  /* Darker Sea Green */
-      border-color: #1B4D3E;
+      background: var(--primary-dark) !important;
+      border-color: var(--primary-dark) !important;
       color: #fff; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
@@ -941,3 +943,45 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+/* Override Bootstrap colors */
+:root {
+  --primary: #2E8B57;
+  --primary-dark: #1B4D3E;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
