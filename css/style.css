@@ -885,7 +885,7 @@ body:after {
     -o-transition: .3s all ease;
     transition: .3s all ease; }
   .blog_entry .more a:hover:before {
-    background: #900048; }
+    background: #2E8B57; }
 
 .form .form-control {
   border: none;
